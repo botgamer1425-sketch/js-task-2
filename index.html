@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: white;
+            color: black;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact</a></li>
+
+            <!-- Toggle Theme Button -->
+            <li>
+                <button id="toggleTheme">Toggle Theme</button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Student Registration</h1>
+        <p>Welcome to our student registration website.</p>
+        <p>Click the "Toggle Theme" button to change the page to dark mode.</p>
+    </div>
+
+    <!-- Internal JavaScript -->
+    <script>
+        const toggleButton = document.getElementById("toggleTheme");
+
+        toggleButton.addEventListener("click", function () {
+            document.body.style.backgroundColor = "darkgrey";
+            document.body.style.color = "white";
+        });
+    </script>
+
+</body>
+</html>
